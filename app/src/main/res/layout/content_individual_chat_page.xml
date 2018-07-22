@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.niket.chatapplication.IndividualChatPage"
+    tools:showIn="@layout/activity_individual_chat_page">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/linear">
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+
+
+       <android.support.v7.widget.CardView
+           android:layout_width="0dp"
+           android:layout_weight="8.5"
+           app:cardCornerRadius="20dp"
+           app:cardElevation="30dp"
+           android:layout_marginBottom="7dp"
+           android:layout_marginRight="8dp"
+           android:layout_marginLeft="5dp"
+           android:layout_height="wrap_content">
+
+           <LinearLayout
+              android:weightSum="10"
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+
+               <ImageView
+                   android:id="@+id/emoji"
+                   android:src="@drawable/smiley"
+                   android:layout_weight="1"
+                   android:layout_margin="10dp"
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent" />
+
+           <hani.momanii.supernova_emoji_library.Helper.EmojiconEditText
+               android:layout_weight="8"
+               android:id="@+id/editMessage"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_margin="5dp"
+               android:background="@drawable/shape2"
+               emojicon:emojiconSize="28sp"
+               android:hint="Type a message"
+               android:padding="5dp"
+               android:textSize="20dp" />
+
+
+               <ImageView
+                   android:src="@drawable/ic_attach"
+                   android:id="@+id/attachFile"
+                   android:layout_weight="1"
+                   android:layout_margin="10dp"
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent" />
+
+           </LinearLayout>
+       </android.support.v7.widget.CardView>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/send"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.4"
+            android:elevation="10dp"
+            android:src="@drawable/ic_send" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

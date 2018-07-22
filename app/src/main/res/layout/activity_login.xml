@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:cardview="http://schemas.android.com/apk/res-auto"
+        xmlns:fancy="http://schemas.android.com/apk/res-auto"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rf">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#C755AE6B"
+            android:padding="10dp">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                cardview:cardBackgroundColor="#fff"
+                cardview:cardElevation="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:id="@+id/linearlayout1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="5sp"
+                            android:text="LOGIN"
+                            android:textSize="20dp" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+
+                                android:drawableStart="@drawable/ic_smartphone"
+                                android:id="@+id/Mobile"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawablePadding="5dp"
+                                android:hint="Mobile"
+                                android:inputType="textEmailAddress"
+
+                                android:padding="13dp" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            fancy:passwordToggleEnabled="true"
+                            >
+
+                            <EditText
+                                android:id="@+id/editTextPassword"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableStart="@drawable/ic_lock"
+                                android:layout_marginTop="16dp"
+                                android:drawablePadding="5dp"
+                                android:hint="Password"
+                                android:inputType="textPassword"
+                                android:padding="13dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="5dp"
+                            android:weightSum="10">
+
+                            <TextView
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="40dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="6"
+                                android:gravity="left"
+                                android:paddingBottom="5dp"
+                                android:paddingTop="5dp"
+                                android:text="don't have account yet?"
+                                android:textSize="12dp" />
+
+                            <TextView
+
+                                android:id="@+id/Register"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="3"
+                                android:clickable="true"
+                                android:text=" REGISTER"
+                                android:textColor="#C755AE6B"
+                                android:textSize="12dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <mehdi.sakout.fancybuttons.FancyButton
+                            android:id="@+id/login"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            fancy:fb_defaultColor="#C755AE6B"
+                            fancy:fb_focusColor="@color/colorPrimaryDark"
+                            fancy:fb_radius="2dp"
+                            fancy:fb_text="LOGIN"
+                            fancy:fb_textColor="#FFFFFF" />
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/linearlayout1"
+                        android:layout_marginTop="20dp">
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#C755AE6B"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="80dp"
+                                android:textColor="@color/white"
+                                android:layout_marginTop="60dp"
+                                android:text="Register with Social Platforms" />
+
+
+                            <com.example.niket.chatapplication.FancyButton.FancyButton
+                                android:id="@+id/facebook"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_margin="15dp"
+                                fancy:fb_defaultColor="@color/white"
+                                fancy:fb_focusColor="@color/greendark"
+                                fancy:fb_fontIconResource="@string/icon_facebook"
+                                fancy:fb_radius="50dp"
+                                fancy:fb_textColor="@color/green" />
+
+                            <com.example.niket.chatapplication.FancyButton.FancyButton
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_margin="15dp"
+                                android:layout_toRightOf="@+id/facebook"
+                                fancy:fb_defaultColor="@color/white"
+                                fancy:fb_focusColor="@color/greendark"
+                                fancy:fb_fontIconResource="@string/icon_twitter"
+                                fancy:fb_radius="50dp"
+                                fancy:fb_textColor="@color/green" />
+
+
+                            <com.example.niket.chatapplication.FancyButton.FancyButton
+                                android:layout_width="40dp"
+                                android:id="@+id/googleSignup"
+                                android:layout_height="40dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_margin="15dp"
+                                android:layout_toLeftOf="@+id/facebook"
+                                fancy:fb_defaultColor="@color/white"
+                                fancy:fb_focusColor="@color/greendark"
+                                fancy:fb_fontIconResource="@string/icon_google"
+                                fancy:fb_radius="50dp"
+                                fancy:fb_textColor="@color/green" />
+
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <mehdi.sakout.fancybuttons.FancyButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="150dp"
+                            android:layout_marginTop="270dp"
+
+                            fancy:fb_defaultColor="@color/white"
+                            fancy:fb_focusColor="@color/colorPrimaryDark"
+                            fancy:fb_radius="20dp"
+                            fancy:fb_text="OR"
+                            fancy:fb_textColor="@color/colorPrimary"
+                            fancy:fb_textSize="10dp" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+    </FrameLayout>
+</layout>

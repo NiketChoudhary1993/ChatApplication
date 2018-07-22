@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "52167969932",
+    "firebase_url": "https://chat-287ef.firebaseio.com",
+    "project_id": "chat-287ef",
+    "storage_bucket": "chat-287ef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:52167969932:android:9dd55389d5cf77e2",
+        "android_client_info": {
+          "package_name": "com.example.niket.chatapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "52167969932-jvjtpdjvnl8g087igfdiq0u7reradrsl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.niket.chatapplication",
+            "certificate_hash": "ffbffe55df6be73f38d983d6c85599fc6e32e62e"
+          }
+        },
+        {
+          "client_id": "52167969932-7mgvbh2m3nofg2itnufe63bjvmtf9oq0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCweU1C7X6VV8RBdHJkj4yWNLSIMt56U7Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "52167969932-7mgvbh2m3nofg2itnufe63bjvmtf9oq0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
